@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "Extra_Tech",
+    "name": "ExTra_Tech",
+    "authors": "Nancok",
+    "description": "Adds some functional futuristic items that work as magic items.",
+    "category": "misc_additions",
+    "dependencies": [ "dda" ]
+  }
+]

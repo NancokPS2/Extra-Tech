@@ -1,0 +1,49 @@
+[
+  {
+    "id": "ext_repulsion_vest",
+    "type": "ARMOR",
+    "name": { "str": "repulsion vest" },
+    "description": "A somewhat heavy vest with 2 buttons on each shoulder that blast nearby creatures with an energy pulse when pushed simultaneously.",
+    "weight": "2500 g",
+    "volume": "2000 ml",
+    "looks_like": "vest",
+    "price": 1000000,
+    "price_postapoc": 4500,
+    "material": [ "superalloy", "cotton" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "covers": [ "torso" ],
+    "coverage": 40,
+    "encumbrance": 2,
+    "material_thickness": 1,
+	"charges_per_use": 150,
+    "use_action": { "type": "cast_spell", "spell_id": "ext_repulsion_vest_spell", "no_fail": true, "level": 1, "need_worn": true },
+	"pocket_data": [
+	  {
+        "pocket_type": "MAGAZINE_WELL",
+        "holster": true,
+        "rigid": true,
+        "max_contains_volume": "20 L",
+        "max_contains_weight": "20 kg",
+        "item_restriction": [ "medium_battery_cell", "medium_plus_battery_cell", "medium_atomic_battery_cell", "medium_disposable_cell" ]
+      }
+	]
+  },  
+  {
+    "id": "ext_water_producer",
+    "type": "TOOL",
+    "symbol": "U",
+    "color": "blue",
+    "name": { "str": "water acumulator" },
+    "description": "A small machine that can accumulate and produce water from thin air. Requires 8 hours to fully refill.",
+    "price": 6000,
+    "material": [ "steel", "plastic" ],
+    "weight": "1250 g",
+    "volume": "1750 ml",
+    "bashing": 6,
+    "to_hit": -1,
+	"charges_per_use": 1,
+	"relic_data": { "charge_info": { "recharge_type": "periodic", "time": "4 h", "regenerate_ammo": true } },
+	"pocket_data": [ { "pocket_type": "MAGAZINE", "watertight": true, "ammo_restriction": { "water": 2 } } ],
+  }
+]
