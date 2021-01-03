@@ -85,6 +85,7 @@
 	"id": "ext_mono_sword",
 	"copy-from": "bio_blade_weapon",
     "name": { "str": "deployed monomolecular blade" },
+	"type": "GENERIC",
 	"weight": "130 g",
 	"volume": "765 ml",
 	"flags": [ "UNARMED_WEAPON", "UNBREAKABLE_MELEE" ],
@@ -98,12 +99,12 @@
   },
   {
     "id": "ext_deploy_sword",
-    "type": "TOOL",
+    "type": "GENERIC",
 	"symbol": "0",
-	"color": "black"
-	"weight": "50 g",
-    "volume": "120 ml",
-	"material":["superalloy"]
+	"color": "black",
+	"weight": "110 g",
+    "volume": "105 ml",
+	"material":["superalloy"],
     "name": { "str": "mono sword storage" },
     "description": "A small oval shaped device with small identations, can be activated to deploy a monomolecular blade.",
 	"price": 500000,

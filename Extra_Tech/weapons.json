@@ -1,0 +1,41 @@
+[
+	{
+	"id": "ext_laser_cannon",
+    "looks_like": "ar15",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": { "str": "laser discharge cannon" },
+    "description": "A very dangerous prototype of laser weapon, most of the bulk is dedicated to protecting the weapon from self destructing when firing, death laser would be an apropiate nickname.",
+    "weight": "2320 g",
+    "volume": "7090 ml",
+    "price": 9000000,
+    "price_postapoc": 4500,
+    "to_hit": -5,
+    "bashing": 12,
+    "material": [ "superalloy", "steel" ],
+    "symbol": "B",
+    "color": "blue",
+    "skill": "launcher",
+    "range": 26,
+    "ranged_damage": { "damage_type": "heat", "amount": 74, "armor_penetration": 3 },
+    "dispersion": 60,
+    "durability": 8,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ] ],
+    "loudness": 12,
+    "ups_charges": 425,
+    "reload": 0,
+    "valid_mod_locations": [
+      [ "accessories", 4 ],
+      [ "emitter", 1 ],
+      [ "grip", 1 ],
+      [ "lens", 1 ],
+      [ "rail", 1 ],
+      [ "sights", 1 ],
+      [ "sling", 1 ],
+      [ "stock", 1 ],
+      [ "underbarrel", 1 ]
+    ],
+    "ammo_effects": [ "LASER", "INCENDIARY" ],
+    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE" ]
+  }
+]
