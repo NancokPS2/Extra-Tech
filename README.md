@@ -4,3 +4,4 @@ Adds some futuristic items that use the magic item system. Working as of 0.E-793
 ## Items
 - Repulsion Vest: Blasts nearby hostile creatures, dealing damage without harming the user. Uses batteries to operate.
 - Water Accumulator: generates a unit of water once every 8 hours, not enough to keep you hydrated on it's own, but can help to mantain a mobile, sustainable source of water.
+- Deployable Monomolecular Sword: a mono sword that you can deploy and conceal, slightly heavier than a bionic one.
