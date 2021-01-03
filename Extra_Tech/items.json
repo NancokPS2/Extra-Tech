@@ -1,7 +1,7 @@
 [
   {
     "id": "ext_repulsion_vest",
-    "type": "ARMOR",
+    "type": "TOOL_ARMOR",
     "name": { "str": "repulsion vest" },
     "description": "A somewhat heavy vest with 2 buttons on each shoulder that blast nearby creatures with an energy pulse when pushed simultaneously.",
     "weight": "2500 g",
@@ -16,8 +16,10 @@
     "coverage": 40,
     "encumbrance": 2,
     "material_thickness": 1,
+    "ammo": "battery",
 	"charges_per_use": 150,
     "use_action": { "type": "cast_spell", "spell_id": "ext_repulsion_vest_spell", "no_fail": true, "level": 1, "need_worn": true },
+	"phase": "solid",
 	"pocket_data": [
 	  {
         "pocket_type": "MAGAZINE_WELL",
@@ -30,12 +32,45 @@
 	]
   },  
   {
+    "id": "ext_shock_lance",
+    "type": "TOOL_ARMOR",
+    "name": { "ctxt": "weapon", "str": "lightning lance" },
+    "description": "A heavy steel spear with cables and other electric parts attached to it, the tip is compromised of 2 twin blades and an electric generator, it can shoot a pin-point accurate electricity arc.",
+    "weight": "2800 g",
+    "volume": "4000 ml",
+	"longest_side": "240 cm",
+    "looks_like": "pike",
+    "price": 150000,
+    "price_postapoc": 80000,
+    "bashing": 7,
+    "cutting": 30,
+    "material": [ "superalloy", "steel" ],
+    "symbol": "Y",
+    "color": "dark_gray",
+    "techniques": [ "WBLOCK_1" ],
+    "ammo": "battery",
+	"charges_per_use": 250,
+	"flags": [ "DURABLE_MELEE", "POLEARM", "SPEAR", "REACH_ATTACK", "NONCONDUCTIVE", "ALWAYS_TWOHAND", "RECHARGE" ],
+    "use_action": { "type": "cast_spell", "spell_id": "ext_shock_lance_spell", "no_fail": true, "level": 0 },
+	"phase": "solid",
+	"pocket_data": [
+	  {
+        "pocket_type": "MAGAZINE_WELL",
+        "holster": true,
+        "rigid": true,
+        "max_contains_volume": "20 L",
+        "max_contains_weight": "20 kg",
+        "item_restriction": [ "heavy_battery_cell", "heavy_plus_battery_cell", "heavy_atomic_battery_cell", "heavy_disposable_cell" ]
+      }
+	]
+  },  
+  {
     "id": "ext_water_producer",
     "type": "TOOL",
     "symbol": "U",
     "color": "blue",
     "name": { "str": "water acumulator" },
-    "description": "A small machine that can accumulate and produce water from thin air. Requires 8 hours to fully refill.",
+    "description": "A small machine that can accumulate and store water from thin air. Requires 16 hours to fully refill.",
     "price": 6000,
     "material": [ "steel", "plastic" ],
     "weight": "1250 g",
@@ -43,7 +78,40 @@
     "bashing": 6,
     "to_hit": -1,
 	"charges_per_use": 1,
-	"relic_data": { "charge_info": { "recharge_type": "periodic", "time": "4 h", "regenerate_ammo": true } },
-	"pocket_data": [ { "pocket_type": "MAGAZINE", "watertight": true, "ammo_restriction": { "water": 2 } } ],
+	"relic_data": { "charge_info": { "recharge_type": "periodic", "time": "8 h", "regenerate_ammo": true } },
+	"pocket_data": [ { "pocket_type": "MAGAZINE", "watertight": true, "ammo_restriction": { "water": 2 } } ]
+  },
+  {
+	"id": "ext_mono_sword",
+	"copy-from": "bio_blade_weapon",
+    "name": { "str": "deployed monomolecular blade" },
+	"weight": "130 g",
+	"volume": "765 ml",
+	"flags": [ "UNARMED_WEAPON", "UNBREAKABLE_MELEE" ],
+	"price": 500000,
+	"use_action": {
+		"menu_text": "Withdraw",
+		"type": "transform",
+		"target": "ext_deploy_sword",
+		"msg": "By pressing a button and twisting the blade, it collapses into a more portable form."
+	}
+  },
+  {
+    "id": "ext_deploy_sword",
+    "type": "TOOL",
+	"symbol": "0",
+	"color": "black"
+	"weight": "50 g",
+    "volume": "120 ml",
+	"material":["superalloy"]
+    "name": { "str": "mono sword storage" },
+    "description": "A small oval shaped device with small identations, can be activated to deploy a monomolecular blade.",
+	"price": 500000,
+	"use_action": {
+		"menu_text": "Deploy",
+		"type": "transform",
+		"target": "ext_mono_sword",
+		"msg": "With the press and twist of a button, the device turns into a monomolecular blade"
+	}
   }
 ]
