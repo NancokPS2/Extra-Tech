@@ -1,0 +1,9 @@
+[
+  {
+  "type": "clothing_military",
+  "id": "chem_school",
+	"entries": [
+	{ "item": "ext_repulsion_vest", "prob": 1 }
+	]
+  }
+]
