@@ -12,13 +12,13 @@
     "material": [ "superalloy", "cotton" ],
     "symbol": "[",
     "color": "dark_gray",
-    "covers": [ "torso" ],
-    "coverage": 40,
-    "encumbrance": 2,
     "material_thickness": 1,
     "ammo": "battery",
 	"charges_per_use": 150,
     "use_action": { "type": "cast_spell", "spell_id": "ext_repulsion_vest_spell", "no_fail": true, "level": 1, "need_worn": true },
+	"covers": [ "torso" ],
+	"coverage": 40,
+    "encumbrance": 2,
 	"phase": "solid",
 	"pocket_data": [
 	  {
