@@ -1,3 +1,6 @@
+# Status: Working with minor defects
+The mod works as do all of the items it adds, however the armors it adds currently lack any encumbrance due to errors still to be solved.
+
 # Extra-Tech
 Adds some futuristic items that use the magic item system. Working as of 0.E-7938
 ### Currenty there is no way to acquire any of the things of the mod without debug mode, natural spawning coming soon.
